@@ -40,7 +40,6 @@ for (let button of addButtons) {
             const cartProds = [...cart.querySelectorAll('.cart__product')];
             for (let cartProd of cartProds) {
                 if (cartProd.getAttribute('data-id') === currentProd.getAttribute('data-id')) {
-                    console.log(cartProd);
                     const cartProdQuantity = cartProd.querySelector('.cart__product-count');
                     cartProdQuantity.textContent = parseInt(cartProdQuantity.textContent) + parseInt(currentQuantity.textContent);
                     return;
